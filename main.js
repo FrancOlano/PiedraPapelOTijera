@@ -23,7 +23,7 @@ function actaulizarResults() {
     "Ganaste 🎉";
   } else {
     results.innerHTML =
-    "Computer: " + puntajeComputer + "        Tu: " + puntajePlayer;
+    "Computadora: " + puntajeComputer + "  "+"        Tu: " + puntajePlayer;
   }
   
 }
