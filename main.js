@@ -32,7 +32,7 @@ function actaulizarResults() {
     refresh.style.display = "inline"
   } else {
     results.innerHTML =
-    "Computadora: " + puntajeComputer + "  "+"        Tu: " + puntajePlayer;
+    "Tu: " + puntajePlayer+ "  " + "Computadora: " + puntajeComputer ;
     refresh.style.display = "none"
   }
   
