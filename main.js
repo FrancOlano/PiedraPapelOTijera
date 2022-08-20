@@ -7,23 +7,33 @@ let btnPapel = document.getElementById("papel");
 let btnTijera = document.getElementById("tijera");
 let player;
 let computer;
+let refresh = document.getElementById("refresh");
 
 let puntajeComputer = 0;
 let puntajePlayer = 0;
 let results = document.getElementById("results");
+
+
+refresh.addEventListener('click', ()=>{
+  window.location.reload();
+})
+
 
 function actaulizarResults() {
   if (puntajeComputer >= 3) {
     
     results.innerHTML =
     "Gana la Computadora";
+    refresh.style.display = "inline"
   }else if(puntajePlayer >= 3){
     
     results.innerHTML =
     "Ganaste 🎉";
+    refresh.style.display = "inline"
   } else {
     results.innerHTML =
     "Computadora: " + puntajeComputer + "  "+"        Tu: " + puntajePlayer;
+    refresh.style.display = "none"
   }
   
 }
