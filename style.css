@@ -41,7 +41,8 @@ p{
     font-size: 25px;
 }
 #refresh{
-    margin-top: 70px
+    margin-top: 70px;
+    color: black;
 }
 #jugada{
     margin-top:50px;
