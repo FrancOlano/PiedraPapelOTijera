@@ -74,19 +74,7 @@ btnPiedra.addEventListener("click", () => {
 
     jugada.innerHTML = piedra + " vs " + piedra;
 
-  } else if (player == tijera && computer == piedra) {
-
-    jugada.innerHTML = tijera + " vs " + piedra;
-    puntajeComputer++;
-    actaulizarResults();
-
-  } else if (player == papel && computer == tijera) {
-
-    jugada.innerHTML = papel + " vs " + tijera;
-    puntajeComputer++;
-    actaulizarResults();
-
-  } else if (player == piedra && computer == papel) {
+  }else if (player == piedra && computer == papel) {
 
     jugada.innerHTML = piedra + " vs " + papel;
     puntajeComputer++
@@ -98,17 +86,6 @@ btnPiedra.addEventListener("click", () => {
     puntajePlayer++
     actaulizarResults();
     
-  } else if (player == papel && computer == piedra) {
-
-    jugada.innerHTML = papel + " vs " + piedra;
-    puntajePlayer++
-    actaulizarResults();
-
-  } else if (player == tijera && computer == papel) {
-    
-    jugada.innerHTML = tijera + " vs " + papel;
-    puntajePlayer++
-    actaulizarResults();
   }
 });
 
@@ -120,41 +97,18 @@ btnPapel.addEventListener("click", () => {
 
     jugada.innerHTML = papel + " vs " + papel;
 
-  } else if (player == tijera && computer == piedra) {
-
-    jugada.innerHTML = tijera + " vs " + piedra;
-    puntajeComputer++;
-    actaulizarResults();
-
-  } else if (player == papel && computer == tijera) {
+  }else if (player == papel && computer == tijera) {
 
     jugada.innerHTML = papel + " vs " + tijera;
     puntajeComputer++;
     actaulizarResults();
 
-  } else if (player == piedra && computer == papel) {
-
-    jugada.innerHTML = piedra + " vs " + papel;
-    puntajeComputer++
-    actaulizarResults();
-
-  } else if (player == piedra && computer == tijera) {
-
-    jugada.innerHTML = piedra + " vs " + tijera;
-    puntajePlayer++
-    actaulizarResults();
-    
   } else if (player == papel && computer == piedra) {
 
     jugada.innerHTML = papel + " vs " + piedra;
     puntajePlayer++
     actaulizarResults();
 
-  } else if (player == tijera && computer == papel) {
-    
-    jugada.innerHTML = tijera + " vs " + papel;
-    puntajePlayer++
-    actaulizarResults();
   }
   
 });
@@ -173,31 +127,7 @@ btnTijera.addEventListener("click", () => {
     puntajeComputer++;
     actaulizarResults();
 
-  } else if (player == papel && computer == tijera) {
-
-    jugada.innerHTML = papel + " vs " + tijera;
-    puntajeComputer++;
-    actaulizarResults();
-
-  } else if (player == piedra && computer == papel) {
-
-    jugada.innerHTML = piedra + " vs " + papel;
-    puntajeComputer++
-    actaulizarResults();
-
-  } else if (player == piedra && computer == tijera) {
-
-    jugada.innerHTML = piedra + " vs " + tijera;
-    puntajePlayer++
-    actaulizarResults();
-    
-  } else if (player == papel && computer == piedra) {
-
-    jugada.innerHTML = papel + " vs " + piedra;
-    puntajePlayer++
-    actaulizarResults();
-
-  } else if (player == tijera && computer == papel) {
+  }else if (player == tijera && computer == papel) {
     
     jugada.innerHTML = tijera + " vs " + papel;
     puntajePlayer++
